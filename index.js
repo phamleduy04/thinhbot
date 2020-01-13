@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 var fs = require('fs')
-var array = fs.readFileSync('test.txt','utf8').split("\n")
+var array = fs.readFileSync('thinh.txt','utf8').split("\n")
 
  
 client.login("TOKEN");
