@@ -4,7 +4,7 @@ var fs = require('fs')
 var array = fs.readFileSync('thinh.txt','utf8').split("\n")
 
  
-client.login("TOKEN");
+client.login("NjY2MzYwNjUxMTkwNjMyNDU5.XhzCwg.nTQJw8S989PEdGyJeZP21kpqdfI");
 
 // Set the bot's presence (activity and status)
 client.on("ready", () => {
@@ -19,10 +19,10 @@ client.on("ready", () => {
 })
 //thính thính =)))
 client.on("message", (message) => {
-    let content = ["xin thính", "thính", "thính ơi"]
+    let content = ["xin thính", "thính", "thính ơi", "xin thinh"]
     if (content.includes(message.content.toLowerCase())) {
         const random = array[Math.floor(Math.random() * array.length)]
         message.channel.send(random)
         
-    }
+    }   
 })
