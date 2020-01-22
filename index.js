@@ -4,7 +4,7 @@ var fs = require('fs')
 var array = fs.readFileSync('thinh.txt','utf8').split("\n")
 
  
-client.login("NjY2MzYwNjUxMTkwNjMyNDU5.XhzCwg.nTQJw8S989PEdGyJeZP21kpqdfI");
+client.login(KEY);
 
 // Set the bot's presence (activity and status)
 client.on("ready", () => {
