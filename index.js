@@ -2,9 +2,10 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 var fs = require('fs')
 var array = fs.readFileSync('thinh.txt','utf8').split("\n")
+var {discord_token} = require('./config.json')
 
  
-client.login("NjY2MzYwNjUxMTkwNjMyNDU5.Xh3tfA.2d3FjeeODgCIa1_B7aB8DlZ9VnE");
+client.login(discord_token);
 
 // Set the bot's presence (activity and status)
 client.on("ready", () => {
